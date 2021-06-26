@@ -10,6 +10,7 @@
 <body>
     <!-- navigation section -->
     <header>
+        <div class="header container">
         <h1>
             <a href="/">WALID KHAN</a>
         </h1>
@@ -17,27 +18,27 @@
             <!-- Anchor elements -->
             <ul class="nav-links">
                 <li>
-                    <a href="#about-me">About Me</a>
+                    <a href="#about-me">ABOUT ME</a>
                 </li>
                 <li>
-                    <a href="#work">Work</a>
+                    <a href="#work">WORK</a>
                 </li>
                 <li>
-                    <a href="#contact-me">Contact Me</a>
+                    <a href="#contact-me">CONTACT ME</a>
                 </li>
                 <li>
-                    <a href="./assets/docs/Walid Khan Official 2021 Resume.pdf">Resume</a>
+                    <a href="./assets/docs/Walid Khan Official 2021 Resume.pdf">RESUME</a>
                 </li>
             </ul>
         </nav>
+        </div>
     </header>
     <!-- end navigation -->
 
     <!-- hero / jumbotron  -->
-    <section>
+    <section class="jumbotron">
         <img src="./assets/images/hero-image.jpg" class="hero">
     </section>
-    <p></p>
     <!-- end hero / jumbotron -->
 
     <!-- About me section -->
@@ -59,22 +60,29 @@
     </section>
 
     <!-- Project #1: Run Buddy -->
-    <section>
-        <p>Run Buddy</p>
-        <img src="assets/images/run-buddy-project-pic.png"  class="run-buddy-pic" a href="https://walidhkhan.github.io/run-buddy/"/>
+    <section class="run-buddy">
+        <p>RUN BUDDY</p>
+        <a href="https://walidhkhan.github.io/run-buddy/">
+        <img src="assets/images/run-buddy-project-pic.png"  class="run-buddy-pic"/>
+        </a>
     </section>
 
-    <!-- Project #2: Robot Gladiators -->
-    <article>
-        <p>Robot Gladiators</p>
-        <img src="assets/images/robot-gladiator-project-pic.jpg" class="secondary-pic"/>
-    </article>
+</br>
 
+    <!-- Project #2: Robot Gladiators -->
+    <div class="row">
+        <section class="robo-gladiators">
+            <p>ROBOT GLADIATORS</p>
+            <img src="assets/images/robot-gladiator-project-pic.jpg" class="secondary-pic"/>
+        </section>
+    </div>  
     <!-- Project #3: Rock, Paper, Scissors -->
-    <article>
-        <p>Rock, Paper, Scissors</p>
-        <img src="assets/images/rps-project-pic.jpg" class="secondary-pic"/>
-    </article>
+    <div class="row">
+        <section class="rps">
+            <p>ROCK, PAPER, SCISSORS</p>
+            <img src="assets/images/rps-project-pic.jpg" class="secondary-pic"/>
+        </section>
+    </div>
     <!-- end work -->
 
     <!-- Contact-me section -->
