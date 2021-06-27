@@ -6,10 +6,14 @@
     padding: 0;
 }
 
+:root {
+    --primary-color: rgb(219, 219, 124);
+    --secondary-color: rgb(66, 93, 112);
+    --tertiary-color: rgb(0, 0, 0);
+}
+
 body {
-    margin: 0px;
-    padding: 0px; 
-    background-color: grey;
+    background-color: var(--secondary-color);
 }
 
 ul {
@@ -22,24 +26,24 @@ a {
 
 /* Header style */
 header {
-    background-color: lightpink;
-    margin: 0px;
-    padding: 0px;
+    background-color: var(--primary-color);
 }
 
-header h1 {
-    padding: 0px;
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header div h1 {
     font-weight: bold;
     font-size: 36px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0 30px;
-    display: flex;
-    align-items: left;
-    text-shadow: aqua;
+
 }
 
 header a {
-    color: black;
+    color: var(--tertiary-color);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -92,20 +96,30 @@ nav li {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.about-me p1 {
-    background-color: lightpink;
+.about-me p {
+    background-color: var(--primary-color);
     width: 100%;
-    display: inline-flex;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    text-align: justify; 
+    margin-top: 100px;
+    margin-bottom: 150px;
+    margin-right: 10%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
-.about-me p2 {
-    align-content: flex-end;
-}
 
 .avatar {
     height: 300px;
     width: 200px;
+    border: 5px solid var(--primary-color); 
+    border-radius: 10px;
+}
+
+.about-me-content {
+    display: flex;
+
 }
 /* About Me End */
 
@@ -119,26 +133,37 @@ nav li {
     text-decoration: underline;
 }
 
+.run-buddy-title {
+    margin-left: 50px;
+}
+
 .run-buddy-pic {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 95%;
     height: 500px;
-    border: 5px solid lightpink;  
+    border: 5px solid var(--primary-color);  
+    border-radius: 10px;
 }
 
 .secondary-pic {
-    height: 250px;
-    width: 500px;
-    border: 5px solid lightpink; 
+    height: 400px;
+    width: 650px;
+    border: 5px solid var(--primary-color); 
+    border-radius: 10px;
 }
 
-.row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.secondary-pic-row,
+.secondary-pic-row2 {
+    display: inline-flex;
+    justify-content: space-around;
 } 
+
+.secondary-work-images {
+    text-align: center;
+    justify-content: space-evenly;
+}
 
 .run-buddy-pic:hover,
 .secondary-pic:hover {
@@ -146,9 +171,35 @@ nav li {
 }
 /* Work End */
 
+/* Contact Me section */
+.contact-me {
+    background-color: var(--primary-color);
+}
+
+.contact-me h3 {
+    margin-top: 20px;
+}
+
+#contact-me li {
+    display: inline-flex;
+}
+
+.contact-links {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: inline-flex;
+    flex-direction: row;
+    font-size: 22px;
+    margin-left: 35%;
+    font-weight: lighter;
+    padding: 5px;
+}
+
+/* Contatct Me End */
+
 /* Footer */
 .footer {
-    background-color: lightpink;
+    background-color: var(--primary-color);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
 }
 /* Footer End */
