@@ -10,6 +10,7 @@
     --primary-color: rgb(219, 219, 124);
     --secondary-color: rgb(66, 93, 112);
     --tertiary-color: rgb(0, 0, 0);
+    --quaternary-color: rgb(159, 185, 196);
 }
 
 body {
@@ -109,6 +110,11 @@ nav li {
     border-bottom-right-radius: 10px;
 }
 
+#about-me {
+    background-color: var(--quaternary-color);
+    opacity: 90%;
+    margin-top: -17px;
+}
 
 .avatar {
     height: 300px;
@@ -131,6 +137,7 @@ nav li {
     text-align: left;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: underline;
+    color: white;
 }
 
 .run-buddy-title {
@@ -186,6 +193,7 @@ nav li {
 
 .contact-links {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
     display: inline-flex;
     flex-direction: row;
     font-size: 22px;
@@ -198,8 +206,10 @@ nav li {
 
 /* Footer */
 .footer {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 15px;
+    font-size: 10px;
+    font-weight: lighter;
+    color: white;
 }
 /* Footer End */
